@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        b{
+            background-color: black;
+            border:5px solid;
+            border-width:3px;
+            display:flex;
+            justify-content:flex-end;
+        }
+        .active{
+            background-color: green;
+        }
+        fieldset{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <b>
+        <a href="home.html" style="color: white; text-decoration: none;padding: 5px 15px;">Home</a>
+        <a href="about.html" style="color: white; text-decoration: none;padding: 5px 15px;">AboutUs</a>
+        <a class="active" href="contact.html" style="color: white; text-decoration: none;padding: 5px 15px;">ContactUs</a>
+        <a href="gallery.html" style="color: white; text-decoration: none;padding: 5px 15px;">Gallery</a>
+     </b>
+     <br>
+     <h1>Contact</h1>
+    <fieldset>
+        <legend align="center">Registration Details</legend>
+        <form >
+        <div><label for="a">Username </label></div>
+        <input type="text" placeholder="Enter username" name="user" id="a">
+        <div><label for="b">Password</label></div>
+        <input type="password" placeholder="Password" id="b" name="password">
+        <div><label for="">DOB</label></div>
+        <input type="date" name="DOB" >
+        <div><label for="">Mobile Number</label></div>
+        <input type="text" name="MOB" id="" pattern="[0-9]{10}" required>
+        <div><label for="">Gender</label></div>
+        <input type="radio" name="abc" id="">M
+        <input type="radio" name="abc" id="">F
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Login">
+        </form>
+        </fieldset>
+</body>
+</html>
